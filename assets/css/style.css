@@ -22,8 +22,8 @@ img{
 
 .login-page {
   position: relative;
-  top: -300px;
-  width: 1000px;
+  top: -250px;
+  width: 360px;
   padding: 8% 0 0;
   margin: auto;
 }
@@ -74,6 +74,11 @@ img{
   color: #f38404;
   text-decoration: none;
 }
+.form .message a:hover {
+  color: #f38404;
+  text-decoration: underline;
+}
+
 .form .register-form {
   display: none;
 }
