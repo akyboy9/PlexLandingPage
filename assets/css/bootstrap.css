@@ -822,8 +822,8 @@ pre code {
 }
 
 .row {
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -100;
+  margin-left: -100;
 }
 
 .row:before,
@@ -1472,7 +1472,7 @@ pre code {
   .col-lg-10,
   .col-lg-11,
   .col-lg-12 {
-    float: left;
+    float: left
   }
   .col-lg-12 {
     width: 100%;

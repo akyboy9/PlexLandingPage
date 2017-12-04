@@ -1,0 +1,2 @@
+login mechanism - store username for future friend requests before passing to plex PlexAPI
+                - hash password and no storage before passing to PlexAPI
