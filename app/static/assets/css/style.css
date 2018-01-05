@@ -94,6 +94,16 @@ img{
   height: 305px;
   margin: 0 auto;
 }
+
+.container_2 {
+  top: 50px;
+  position: relative;
+  z-index: 1;
+  width: 540px;
+  height: 305px;
+  margin: 0 auto;
+}
+
 .container:before, .container:after {
   content: "";
   display: block;

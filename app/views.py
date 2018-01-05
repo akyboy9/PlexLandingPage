@@ -1,4 +1,4 @@
-from flask import render_template, redirect, request
+from flask import request, render_template, redirect
 from app import app
 from plexapi.myplex import MyPlexAccount
 
@@ -22,3 +22,19 @@ def index_login():
 def login():
 	return render_template('landing.html')
 
+@app.route('/landingToRequest', methods=['GET','POST'])
+def landingToRequest():
+    if request.method == 'POST':
+        return redirect('/request_plex')
+
+@app.route('/request_plex')
+def request_plex():
+    return render_template('request.html')
+
+@app.route('/process_request', methods=['GET', 'POST'])
+def process_request():
+    if request.method == 'POST':
+        requested = request.form['text_2']
+        requested = requested.upper()
+        print requested
+        return redirect('/request_plex')
