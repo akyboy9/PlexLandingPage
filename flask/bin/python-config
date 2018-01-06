@@ -1,4 +1,4 @@
-#!/Users/Aky/Documents/PlexLandingPage/flask/bin/python
+#!/home/zhoffm/Documents/Projects/PlexLandingPage/flask/bin/python
 
 import sys
 import getopt

@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/Aky/Documents/PlexLandingPage/flask"
+VIRTUAL_ENV="/home/zhoffm/Documents/Projects/PlexLandingPage/flask"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
