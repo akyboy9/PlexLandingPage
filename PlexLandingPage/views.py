@@ -1,5 +1,5 @@
 from flask import request, render_template, redirect
-from app import app
+from views import app
 from plexapi.myplex import MyPlexAccount
 
 @app.route('/')
