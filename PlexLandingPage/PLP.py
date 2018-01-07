@@ -4,6 +4,10 @@ from plexapi.myplex import MyPlexAccount
 app = Flask(__name__)
 
 
+# def verify_plex_access(username, password):
+
+
+
 @app.route('/')
 def index():
     return render_template('index.html')
