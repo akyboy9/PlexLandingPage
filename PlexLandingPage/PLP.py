@@ -48,7 +48,6 @@ def request_plex():
 def process_request():
     if request.method == 'POST':
         requested = request.form['text_2']
-        requested = requested.upper()
         push_to_bullet(username,requested)
         return redirect('/request_plex')
 
