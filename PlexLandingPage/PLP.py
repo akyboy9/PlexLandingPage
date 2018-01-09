@@ -1,21 +1,15 @@
 from flask import request, render_template, redirect, Flask
 from plexapi.myplex import MyPlexAccount
 from pushbullet import Pushbullet
+from validation import verify_plex_access
 
 app = Flask(__name__)
 
+
 def push_to_bullet(username, note):
-    api_key ='o.RjVLTnmk1r9gg2elzO90qbl7D8sdVSyJ'
+    api_key = 'o.RjVLTnmk1r9gg2elzO90qbl7D8sdVSyJ'
     pb = Pushbullet(api_key)
     push = pb.push_note(username, note)
-
-
-def verify_plex_access(username, password):
-    if username == 'USERNAME':
-        if password == 'PASSWORD':
-            return True
-    return False
-
 
 
 @app.route('/')
@@ -28,10 +22,7 @@ def index_login():
     if request.method == 'POST':
         username = request.form['text']
         password = request.form['pass']
-        password = password.upper()
-        username = username.upper()
-        kobe = verify_plex_access(username, password)
-        if kobe == True:
+        if verify_plex_access(username, password):
             return redirect('/home')
         return redirect('/')
 
