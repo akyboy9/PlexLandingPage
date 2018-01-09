@@ -2,7 +2,7 @@ from plexapi import myplex, exceptions
 
 
 def verify_plex_access(username, password):
-    __master_acc = myplex.MyPlexAccount(username='zhoffm@gmail.com', password='zach585994')
+    __master_acc = myplex.MyPlexAccount(username='', password='')
     __master_acc_friends = __master_acc.users()
     try:
         curr_user = myplex.MyPlexAccount(username=username, password=password)
