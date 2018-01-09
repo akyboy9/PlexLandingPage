@@ -2,5 +2,6 @@
 /flask
 /.idea
 /PlexLandingPage.egg-info
+/PLP-venv
 scratch.py
 plex_test.py

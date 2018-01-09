@@ -9,7 +9,7 @@ app = Flask(__name__)
 def push_to_bullet(username, note):
     api_key = 'o.RjVLTnmk1r9gg2elzO90qbl7D8sdVSyJ'
     pb = Pushbullet(api_key)
-    push = pb.push_note(username, note)
+    pb.push_note(username, note)
 
 
 @app.route('/')
@@ -17,7 +17,7 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/index', methods=['GET','POST'])
+@app.route('/index', methods=['GET', 'POST'])
 def index_login():
     if request.method == 'POST':
         username = request.form['text']
