@@ -36,7 +36,7 @@ pushbullet.py==0.11.0
 py2app==0.7.3
 pycparser==2.18
 pycrypto==2.6.1
-PyJWT==1.5.3
+PyJWT==2.4.0
 pyobjc-core==2.5.1
 pyobjc-framework-Accounts==2.5.1
 pyobjc-framework-AddressBook==2.5.1
